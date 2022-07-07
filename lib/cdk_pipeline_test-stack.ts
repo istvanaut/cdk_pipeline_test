@@ -23,7 +23,7 @@ export class CdkPipelineTestStack extends Stack {
     testingStage.addPost(new ManualApprovalStep("Manual approval before production"));
 
     const prodStage = pipeline.addStage(new MyPipelineAppStage(this, "prod", {
-      env: {account: "", region: "eu-central-1"}
+      env: {account: "849243743924", region: "eu-central-1"}
     }))
 
 
